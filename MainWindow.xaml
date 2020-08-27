@@ -1,0 +1,40 @@
+﻿<Window x:Class="WPFCalc.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFCalc"
+        mc:Ignorable="d"
+        Title="Calc" Height="450" Width="250.5" ResizeMode="NoResize">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+            <GradientStop Color="Black"/>
+            <GradientStop Color="#FF00B1D8" Offset="1"/>
+        </LinearGradientBrush>
+    </Window.Background>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="235"></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBox x:Name="result" Margin="10,10,10,0" IsReadOnly="True" TextWrapping="Wrap" FontSize="24" TextDecorations="{x:Null}" Height="50" VerticalAlignment="Top" VerticalContentAlignment="Center" Padding="0,0,10,0" BorderThickness="0" Foreground="White" Background="Black" Opacity="0.7" HorizontalContentAlignment="Right"/>
+        <Button x:Name="btn7" Content="7" HorizontalAlignment="Right" Margin="0,10,175,0" Width="50" Height="50" Click="btn7_Click" Opacity="0.5" BorderThickness="0" ClipToBounds="True" Cursor="Arrow" Background="Black" Foreground="White" FontSize="20" Grid.Row="1" VerticalAlignment="Top" BorderBrush="{x:Null}"/>
+        <Button x:Name="btn8" Content="8" HorizontalAlignment="Right" Margin="0,10,120,0" Width="50" Height="50" Click="btn8_Click" Opacity="0.5" BorderThickness="0" ClipToBounds="True" Cursor="Arrow" Background="Black" Foreground="White" FontSize="20" Grid.Row="1" VerticalAlignment="Top" HorizontalContentAlignment="Center" BorderBrush="{x:Null}"/>
+        <Button x:Name="btn9" Content="9" HorizontalAlignment="Right" Margin="0,10,65,0" Width="50" Height="50" Click="btn9_Click" Opacity="0.5" BorderThickness="0" ClipToBounds="True" Cursor="Arrow" Background="Black" Foreground="White" FontSize="20" Grid.Row="1" VerticalAlignment="Top" BorderBrush="{x:Null}"/>
+        <Button x:Name="btn4" Content="4" HorizontalAlignment="Right" Margin="0,65,175,0" Width="50" Height="50" Click="btn4_Click" Opacity="0.5" BorderThickness="0" ClipToBounds="True" Cursor="Arrow" Background="Black" Foreground="White" FontSize="20" Grid.Row="1" VerticalAlignment="Top" BorderBrush="{x:Null}"/>
+        <Button x:Name="btn5" Content="5" HorizontalAlignment="Right" Margin="0,65,120,0" Width="50" Height="50" Click="btn5_Click" Opacity="0.5" BorderThickness="0" ClipToBounds="True" Cursor="Arrow" Background="Black" Foreground="White" FontSize="20" Grid.Row="1" VerticalAlignment="Top" HorizontalContentAlignment="Center" BorderBrush="{x:Null}"/>
+        <Button x:Name="btn6" Content="6" HorizontalAlignment="Right" Margin="0,65,65,0" Width="50" Height="50" Click="btn6_Click" Opacity="0.5" BorderThickness="0" ClipToBounds="True" Cursor="Arrow" Background="Black" Foreground="White" FontSize="20" Grid.Row="1" VerticalAlignment="Top" BorderBrush="{x:Null}"/>
+        <Button x:Name="btn1" Content="1" HorizontalAlignment="Right" Margin="0,120,175,0" Width="50" Height="50" Click="btn1_Click" Opacity="0.5" BorderThickness="0" ClipToBounds="True" Cursor="Arrow" Background="Black" Foreground="White" FontSize="20" Grid.Row="1" VerticalAlignment="Top" BorderBrush="{x:Null}"/>
+        <Button x:Name="btn2" Content="2" HorizontalAlignment="Right" Margin="0,120,120,0" Width="50" Height="50" Click="btn2_Click" Opacity="0.5" BorderThickness="0" ClipToBounds="True" Cursor="Arrow" Background="Black" Foreground="White" FontSize="20" Grid.Row="1" VerticalAlignment="Top" HorizontalContentAlignment="Center" BorderBrush="{x:Null}"/>
+        <Button x:Name="btn3" Content="3" HorizontalAlignment="Right" Margin="0,120,65,0" Width="50" Height="50" Click="btn3_Click" Opacity="0.5" BorderThickness="0" ClipToBounds="True" Cursor="Arrow" Background="Black" Foreground="White" FontSize="20" Grid.Row="1" VerticalAlignment="Top" BorderBrush="{x:Null}"/>
+        <Button x:Name="btn0" Content="0" HorizontalAlignment="Right" Margin="0,175,175,0" Width="50" Height="50" Click="btn0_Click" Opacity="0.5" BorderThickness="0" ClipToBounds="True" Cursor="Arrow" Background="Black" Foreground="White" FontSize="20" Grid.Row="1" VerticalAlignment="Top" BorderBrush="{x:Null}"/>
+        <Button x:Name="btnComma" Content="," HorizontalAlignment="Right" Margin="0,175,120,0" Width="50" Height="50" Click="btnComma_Click" Opacity="0.5" BorderThickness="0" ClipToBounds="True" Cursor="Arrow" Background="Black" Foreground="White" FontSize="20" Grid.Row="1" VerticalAlignment="Top" HorizontalContentAlignment="Center" BorderBrush="{x:Null}"/>
+        <Button x:Name="btnPlus" Content="+" HorizontalAlignment="Right" Margin="0,10,10,0" Width="50" Height="50" Click="btnPlus_Click" Opacity="0.5" BorderThickness="0" ClipToBounds="True" Cursor="Arrow" Background="Black" Foreground="White" FontSize="20" Grid.Row="1" VerticalAlignment="Top" BorderBrush="{x:Null}"/>
+        <Button x:Name="btnMinus" Content="-" HorizontalAlignment="Right" Margin="0,65,10,0" Width="50" Height="50" Click="btnMinus_Click" Opacity="0.5" BorderThickness="0" ClipToBounds="True" Cursor="Arrow" Background="Black" Foreground="White" FontSize="20" Grid.Row="1" VerticalAlignment="Top" BorderBrush="{x:Null}"/>
+        <Button x:Name="btnTimes" Content="×" HorizontalAlignment="Right" Margin="0,120,10,0" Width="50" Height="50" RenderTransformOrigin="0.665,2.397" Click="btnTimes_Click" Opacity="0.5" BorderThickness="0" ClipToBounds="True" Cursor="Arrow" Background="Black" Foreground="White" FontSize="20" Grid.Row="1" VerticalAlignment="Top" BorderBrush="{x:Null}"/>
+        <Button x:Name="btnObelus" Content="÷" HorizontalAlignment="Right" Margin="0,175,10,0" Width="50" Height="50" Click="btnObelus_Click" Opacity="0.5" BorderThickness="0" ClipToBounds="True" Cursor="Arrow" Background="Black" Foreground="White" FontSize="20" Grid.Row="1" VerticalAlignment="Top" BorderBrush="{x:Null}"/>
+        <Button x:Name="btnEqual" Content="=" HorizontalAlignment="Right" Margin="0,175,65,0" Width="50" Height="50" Click="btnEqual_Click" Opacity="0.5" BorderThickness="0" ClipToBounds="True" Cursor="Arrow" Background="Black" Foreground="White" FontSize="20" Grid.Row="1" VerticalAlignment="Top" BorderBrush="{x:Null}"/>
+        <TextBox x:Name="operand" Margin="10,110,10,0" IsReadOnly="True" TextWrapping="Wrap" FontSize="32" TextDecorations="{x:Null}" VerticalContentAlignment="Center" Padding="0,0,10,0" BorderThickness="0" Foreground="White" Background="Black" Opacity="0.7" HorizontalContentAlignment="Right"/>
+        <TextBox x:Name="operator" Margin="10,60,10,0" IsReadOnly="True" TextWrapping="Wrap" TextDecorations="{x:Null}" Height="50" VerticalAlignment="Top" FontSize="24" VerticalContentAlignment="Center" Padding="0,0,10,0" BorderThickness="0" Foreground="White" Background="Black" Opacity="0.7" HorizontalContentAlignment="Right"/>
+    </Grid>
+</Window>
